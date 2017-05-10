@@ -1,0 +1,5 @@
+<h1>Figures: </h1>
+
+  <% @figures.each_with_index do |figure, index| %>
+    <h3><%= index + 1 %>. <a href="/figures/<%= figure.id %>"><%= figure.name  %></a></h3>
+  <% end %>
